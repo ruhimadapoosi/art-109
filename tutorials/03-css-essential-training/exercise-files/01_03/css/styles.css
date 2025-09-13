@@ -1,0 +1,42 @@
+*{
+
+    color:purple;
+}
+
+h1{ 
+    color:orange;
+}
+
+#highlight {
+    background:yellow;
+}
+
+.large-text { font-weight: bold;}
+
+a {
+    color:black;
+}
+section a {
+    color:green;
+}
+section p a {
+    color:pink;
+}
+
+.background {
+width: 600px;
+height:400px;
+background-color: lightblue;
+background-image: url(https://hips.hearstapps.com/hmg-prod/images/west-virginia-gray-cottage-64dd6bb056057.jpg);
+background-repeat: no-repeat;
+background-position: 10 px 10%; /* can also be center, top, bottom, left, right*/
+background-size: 50%; /* #% #% means width height, can also be cover (full area)*/
+}
+
+.first {
+    font-size: 24px; 
+}
+
+section p::first-letter {
+    color:red
+}
