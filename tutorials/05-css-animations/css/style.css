@@ -1,0 +1,101 @@
+
+body {
+
+    animation: change-color 10s infinite alternate;
+}
+
+@keyframes change-color {
+    /* from {background-color: antiquewhite;}
+    to {background-color: aquamarine;} */
+    0% {background-color: antiquewhite;}
+    50% {background-color: yellow;}
+    100% {background-color: aquamarine;}
+
+}
+
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg, 0deg);}
+    50% {transform: skew(-5deg, 3deg);}
+}
+
+.square {
+    background-color: orchid;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px; /*bevels edges*/
+    margin: 50px auto; /* if 4 values - top, right, bottom, left like a clockwise rotation, if just 2 then it's top/bottom and right/left, but if 1 value same margin for all sides....*/ 
+    /* auto will make automatic margins that center it on the page
+     only works for block elements*/
+
+    transition: all 1s; /*what u want to change (background-color, transform, all), then how long u want the transition to be */
+
+}
+
+.square:hover {
+    background-color: yellowgreen;
+    transform: rotate(30deg);
+}
+
+.button-div {
+
+    text-align: center;
+}
+.button {
+    color: white;
+    background-color: darkblue;
+    padding: 16px;
+    margin: 50px auto;
+    /* display: block;
+    width: 100px;
+    text-align: center;
+ */
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color:purple;
+    transform: scale(1.5);
+    color: greenyellow;  /* color refers to text */
+    /*to get an anchor tag to change u need to make it an inline block*/
+}
+
+.loading {
+    animation: stretch 5s 3 normal;
+    background-color: chocolate;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {width: 100px;}
+    100% {width: 80vw;}
+}
+
+.moon {
+    margin: 10px;
+}
+
+.moon:hover {
+    text-decoration: underline overline dotted;
+}
+
+.testing {
+    animation: fontchange 4s infinite alternate;
+}
+
+@keyframes fontchange {
+    0% {font-family:cursive;}
+    100% {font-family:'Courier New', Courier, monospace;
+            font-size: xx-small;
+        color:fuchsia;}
+
+}
+

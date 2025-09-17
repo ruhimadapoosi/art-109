@@ -1,0 +1,46 @@
+.title {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.square {
+    background-color: orchid;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px; /*bevels edges*/
+    margin: 50px auto; /* if 4 values - top, right, bottom, left like a clockwise rotation, if just 2 then it's top/bottom and right/left, but if 1 value same margin for all sides....*/ 
+    /* auto will make automatic margins that center it on the page
+     only works for block elements*/
+
+    transition: all 1s; /*what u want to change (background-color, transform, all), then how long u want the transition to be */
+    /*transition: <property> <duration> <timing-function> <delay>;*/
+}
+
+.square:hover {
+    background-color: yellowgreen;
+    transform: rotate(30deg);
+}
+
+.button-div {
+
+    text-align: center;
+}
+.button {
+    color: white;
+    background-color: darkblue;
+    padding: 16px;
+    margin: 50px auto;
+    /* display: block;
+    width: 100px;
+    text-align: center;
+ */
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button:hover {
+    background-color:purple;
+    transform: scale(1.5);
+    color: greenyellow;  /* color refers to text */
+    /*to get an anchor tag to change u need to make it an inline block*/
+}
