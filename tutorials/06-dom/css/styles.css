@@ -47,3 +47,18 @@ main {
 p {
     margin-top: 20px;
 }
+
+.images {
+ background-color: brown;
+}
+
+.image-div {
+    display: inline-block;
+}
+
+#image-2 {
+    visibility: hidden;
+    position: absolute;
+    top: 50px;
+
+}

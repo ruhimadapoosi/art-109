@@ -15,5 +15,13 @@ setTimeout ( function(){
         document.querySelector("body").style.backgroundColor = "black";
     }
 
+//images disapearring
+document.querySelector("#image-0").addEventListener("click", function() {
+    document.querySelector("#image-0").style.display = "none";
+    // alert("yippeee!");
+})
 
-/////NOTE TO RUHI- made it thru slides 1-15 of 05DOM tut, need to do 17-26
+document.querySelector("#image-1").addEventListener("click", 
+    function() {
+    document.querySelector("#image-2").style.visibility = "visible";
+})
