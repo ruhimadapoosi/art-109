@@ -1,0 +1,274 @@
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+    background-image: url(../assets/bg.png);
+    z-index: -2;
+
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+header {
+    color: black;
+}
+
+
+
+/* NAVBAR *************************************************************/
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: black;
+}
+
+/* Logo styling */
+.logo a {
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+/* Navigation links styling */
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s, background-color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: rgb(232, 26, 26);
+    border-radius: 4px;
+}
+
+/* Menu toggle button for mobile view */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    background-color: rgb(0, 0, 0);
+    height: 3px;
+    width: 25px;
+    margin: 5px;
+}
+
+/* Responsive styling */
+@media (max-width: 500px) {
+
+
+
+    .logo a {
+    display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+/* HOME PAGE *************************************************************/
+
+.container-home {
+position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%) scale(1);
+      transform-origin: center center;
+}
+
+.content-wrapper-home {
+    flex: 1 0 auto;
+    margin: 0 auto;
+
+    display: flex;
+    padding: 30px;
+    max-width: 99vw;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.home-logo {
+    position: absolute;
+    top: -20vw;
+    left: -20vw;
+    width: 50vw ;
+}
+
+.home-team {
+    position: absolute;
+    width: 25vw;
+    top: -15vw;
+    left: 25vw;
+    transform: rotate(20deg);
+}
+.home-diary {
+    position: absolute;
+    left: -58vw;
+    top: 10vw;
+    transform: rotate(340deg);
+    width: 40vw;
+}
+
+.home-team:hover {
+    transform: rotate(24deg) scale(1.05);
+}
+
+.home-diary:hover {
+    transform: rotate(342deg) scale(1.05);
+}
+
+
+/* DIARY  *************************************************************/
+
+.content-wrapper {
+    flex: 1 0 auto;
+    margin: 0 auto;
+
+    display: flex;
+    padding: 30px;
+    max-width: 99vw;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+#closed-diary {
+    height: 80vh;
+}
+
+#closed-diary:active {
+    transform: scale(1.05);
+}
+#open-diary {
+    height: 80vh;
+    display: none;
+}
+
+#key {
+    position: absolute;
+    height: 20vh;
+    right: 10vw;
+}
+
+#prog-01 {
+    display: none;
+    position: absolute;
+    right: 15vw;
+    top: 20vw;
+    width: 30vw;
+    transform: rotate(10deg);
+}
+#key:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+#prog-01:hover {
+    transform: rotate(7deg);
+}
+
+@media screen and (max-width:1050px) {
+#open-diary {
+    width: 90vw;
+    height: auto;
+}
+}
+
+
+/* About  *************************************************************/
+
+.main-about {
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* delete gap if you would rather use margins */
+    gap: 50px;
+}
+
+
+section {
+    flex: 0 1 200px;
+    padding: 2rem;
+
+    /* add margin if you don't want to use gap in flex container (main) */
+}
+
+
+.stuffie {
+    width: 30vw;
+}
+
+.stuffie:hover {
+    transform: rotate(-15deg);
+}
+/* media queries
+------------------------------ 
+
+customize these for your own breakpoints */
+
+
+@media screen and (max-width:650px) {
+ /* css for mobile here  */
+}
+
+
