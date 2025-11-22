@@ -1,0 +1,21 @@
+*{
+
+    color:rgb(174, 234, 246);
+}
+
+h1{ 
+    color:rgb(202, 255, 55);
+}
+
+
+.background {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(23, 2, 28);
+    margin: 10vh;
+}
+
+.first {
+    font-size: 24px; 
+}
+
